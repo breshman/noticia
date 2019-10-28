@@ -2,3 +2,19 @@
   max-height: 35vh;
   overflow: hidden;
 }
+
+
+ion-avatar{
+    --border-radius: 0px;
+    border-right: 1px solid grey;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    & p {
+        font-size: 10px;
+        margin: 0px;
+    }
+    & small {
+        font-size: 8px;
+    }
+}
