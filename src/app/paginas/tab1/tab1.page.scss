@@ -6,12 +6,14 @@
 
 ion-avatar{
     --border-radius: 0px;
-
+    height: 85px;
     margin-top: 0px;
     margin-bottom: 0px;
-    & .linea {
-        border-right: 1px solid grey;
-    }
+    margin-left: 0px;
+    margin-right: 0px;
+    // & .linea {
+    //     border-right: 1px solid grey;
+    // }
     & p {
         font-size: 10px;
         margin: 0px;
@@ -26,7 +28,7 @@ ion-avatar{
     }
 }
 
-ion-label{
-    color: red;
-    border-left: 1px solid grey;
-}
+// ion-label{
+//     color: red;
+//     border-left: 1px solid grey;
+// }
