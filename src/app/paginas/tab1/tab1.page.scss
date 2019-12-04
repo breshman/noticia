@@ -21,11 +21,11 @@ ion-note {
 ion-avatar{
     --border-radius: 0px;
     height: 84.4px;
-    width: 50px;
+    width: 45px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-    margin-right: 8px;
+    margin-right: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,18 +36,23 @@ ion-avatar{
     & small {
         font-size: 8px;
     }
-    & .punto {
-        text-align: right;
-        padding: 0px;
-        margin: 0px;
+    & .fecha {
+        text-align: center;
+        color: gray;
     }
-    & img {
-        margin-left: 4px;
-        margin-right: 2px;
-    }
+    
 }
 
-// ion-label{
-//     color: red;
-//     border-left: 1px solid grey;
-// }
+ion-label{
+    ion-row {
+       --ion-grid-padding: 0px;
+    //    background-color: grey;
+       ion-col {
+           --ion-grid-column-padding: 0px;
+           div {
+            text-align: right;
+        }
+       }
+    }
+   
+}
