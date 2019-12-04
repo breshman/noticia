@@ -3,6 +3,20 @@
   overflow: hidden;
 }
 
+ion-note {
+    div {
+        width: 50px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+   
+    & small {
+        text-align: center;
+    }
+}
 
 ion-avatar{
     --border-radius: 0px;
@@ -15,10 +29,6 @@ ion-avatar{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    & .linea {
-       
-    }
     & p {
         font-size: 10px;
         margin: 0px;
@@ -32,8 +42,8 @@ ion-avatar{
         margin: 0px;
     }
     & img {
-        margin-left: 8px;
-        margin-right: 4px;
+        margin-left: 4px;
+        margin-right: 2px;
     }
 }
 
