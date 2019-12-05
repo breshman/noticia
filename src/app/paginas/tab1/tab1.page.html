@@ -10,12 +10,12 @@
 
 
 
-	<ion-list>
+	<ion-list >
 		<ion-list-header>
 			Recent ConversationsS
 		</ion-list-header>
-
-		<ion-item lines="none" *ngFor="let i of lista">
+        
+		<ion-item button lines="none" *ngFor="let i of lista">
 			<ion-avatar slot="start">
 				<!-- <p class="punto">•</p> -->
 				<div class="fecha" [ngClass]="{'entregado' : i.estado === 'Entregado' ? true : false}">
@@ -26,21 +26,25 @@
           </ion-avatar>
 
 				<ion-label>
-                <small style="font-size: 10px;"><b>GR</b> 001-0020139 • <b>FT</b> F009-00000108</small>
-                <h2>{{i.name}}</h2>
+					
+					<h2>{{i.name}}</h2>
+                    <p>{{i.direccion}}</p>
 					<ion-row>
 
 						<ion-col size="6">
-							<small>{{i.verdedor}}</small>
+							<small>{{i.verdedor}}  {{i.documentos.length}}</small>
 						</ion-col>
 
 						<ion-col size="6">
-							
-                            <div><ion-badge color="primary">{{i.estado}}</ion-badge></div>
+
+							<div>
+								<ion-badge color="primary">{{i.estado}}</ion-badge>
+							</div>
 						</ion-col>
-						
+
 					</ion-row>
-					<p>{{i.direccion}}</p>
+					<small style="font-size: 10px;" *ngIf="i.documentos.length === 1"><b>GR</b> {{i.documentos[0].numeroGR }} • <b>FT</b> {{i.documentos[0].numeroFT}} </small>
+					<small style="font-size: 10px;" *ngIf="i.documentos.length > 1"> <b>Tiene {{i.documentos.length < 10 ? '0' + i.documentos.length : i.documentos.length}} documentos </b> </small>
 				</ion-label>
 				<!-- <ion-note>
             <div>

@@ -38,7 +38,7 @@ ion-avatar{
     }
     & .fecha {
         text-align: center;
-        color: white;
+        color: rgba($color: #fff, $alpha: 0.0);
         &.entregado {
             color: gray;
         }
