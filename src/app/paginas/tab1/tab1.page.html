@@ -18,14 +18,15 @@
 		<ion-item lines="none" *ngFor="let i of lista">
 			<ion-avatar slot="start">
 				<!-- <p class="punto">•</p> -->
-				<div class="fecha">
+				<div class="fecha" [ngClass]="{'entregado' : i.estado === 'Entregado' ? true : false}">
 					<P>12:05</P>
-					<small>28/10</small>
+					<small>28/10/19</small>
 				</div>
 				<img [src]="'assets/' + i.estado + '.svg'" alt=""/>
           </ion-avatar>
 
 				<ion-label>
+                <small style="font-size: 10px;"><b>GR</b> 001-0020139 • <b>FT</b> F009-00000108</small>
                 <h2>{{i.name}}</h2>
 					<ion-row>
 
@@ -35,7 +36,7 @@
 
 						<ion-col size="6">
 							
-                            <div><small>{{i.estado}}</small> </div>
+                            <div><ion-badge color="primary">{{i.estado}}</ion-badge></div>
 						</ion-col>
 						
 					</ion-row>

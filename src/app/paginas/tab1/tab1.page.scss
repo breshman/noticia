@@ -20,7 +20,7 @@ ion-note {
 
 ion-avatar{
     --border-radius: 0px;
-    height: 84.4px;
+    height: 108px;
     width: 45px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -38,7 +38,10 @@ ion-avatar{
     }
     & .fecha {
         text-align: center;
-        color: gray;
+        color: white;
+        &.entregado {
+            color: gray;
+        }
     }
     
 }
