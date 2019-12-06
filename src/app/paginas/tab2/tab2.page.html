@@ -7,13 +7,16 @@
 </ion-header>
 
 <ion-content>
-    <ion-list>
+  <ion-list class="eventos">
 
-        <ion-item *ngFor="let i of lista">
-            <ion-note>{{i.id}}</ion-note>
-            <ion-label>{{i.name}}</ion-label>
-        </ion-item>
+    <ion-item lines="none"  *ngFor="let i of [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]">
 
-    </ion-list>
-    <p>{{lista | json}}</p>
+      <time datetime="2011-11-18T14:54:39.929"> <small>14:55 <br> 18/15/25</small></time>
+      <span><strong>Bat &amp; Ball</strong> On time</span>
+      <!-- <ion-label>i.name}}</ion-label>
+      <ion-label>i.name}}</ion-label> -->
+      
+    </ion-item>
+
+  </ion-list>
 </ion-content>

@@ -1,1 +1,41 @@
-
+.eventos ion-item {
+  display: flex;
+  time {
+    position: relative;
+    color: #ccc;
+    text-align: right;
+    padding: 0 .6em;
+    :after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      right: 0;
+      top: 0;
+      transform: translateX(50%);
+      border-radius: 50%;
+      background: red;
+      border: 2px #ccc solid;
+      width: 0.8em;
+      height: 0.8em;
+    }
+    small {
+      font-size: 10px;
+    }
+  }
+  span {
+    padding: 0 0 .9em 1em;
+    position: relative;
+    :before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        height: 100%;
+        border-left: 2px #ccc solid;
+    }
+    strong {
+        display: block;
+        font-weight: bolder;
+    }
+  }
+}
