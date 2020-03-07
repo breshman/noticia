@@ -7,5 +7,11 @@
 </ion-header>
 
 <ion-content>
-    <div id='map'></div>
+    <!-- <div id='map'></div> -->
+    <ion-button (click)="presentAlert()">
+        click
+    </ion-button>
+
+    <p>{{cantidad}}</p>
+    <pre>{{data | json }}</pre>
 </ion-content>
