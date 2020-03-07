@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
+import { Subject } from 'rxjs';
 
 @Component({
     selector: 'app-tab3',
@@ -22,7 +23,7 @@ export class Tab3Page {
             inputs: [
                 {
                     name: 'cantidad',
-                    type: 'number',
+                    type: 'text',
                     placeholder: 'Sleciones las cantidad',
                     value: this.cantidad | 0
                 },
@@ -41,11 +42,14 @@ export class Tab3Page {
                         this.cantidad = n.cantidad
                         this.data = n
                     },
+                    cssClass: 'confirm'
                     
                 }
             ]
         });
 
         await alert.present();
+
+     
     }
 }
